@@ -166,19 +166,27 @@ nav button,
 
 /* MOBILE VIEW */
 .N-mobile {
-  /* background-color: green; */
   margin-top: 1rem;
   display: none;
+  /* text-align: center; */
 }
 .N-mobile ul {
   display: block;
+  margin-bottom: 2rem;
 }
-.N-mobile ul li {
-  margin: 0 0 1rem 0;
-  /* background-color: red; */
+.N-mobile ul li a {
+  display: block;
+  /* width: 1; */
+  margin: auto;
+  border: none;
+  padding: 1rem 0;
 }
 .N-mobile ul li a:hover {
+  border-left: 0.5rem solid var(--Bg1-DY);
+  /* background-color: var(--Bg1-DY); */
   color: var(--Bg1-DY);
+  padding-left: 0.5rem;
+  transition: all ease-in-out 0.2s;
 }
 .N-mobile button {
   margin-left: 0;
@@ -843,15 +851,16 @@ footer .forth {
     display: block;
   }
   header ul,
-  header button {
+  header .h-btn_1 {
     display: none;
   }
 
   #hero {
     flex-direction: column;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding: 40px 10px 20px;
+    /* padding-top: 40px;
+    padding-bottom: 20px; */
   }
 
   #hero .left {
@@ -860,7 +869,7 @@ footer .forth {
   }
 
   #hero .right img {
-    max-width: 550px;
+    max-width: 500px;
   }
 
   #companies {
@@ -945,7 +954,7 @@ footer .forth {
   #community .second > div {
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    max-width: 400px;
   }
 
   #download {
